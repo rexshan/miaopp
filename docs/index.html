@@ -1,5 +1,352 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head><style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="y8z5fu" data-token-hash="24omxn">:where(.css-fpg3f5) a{color:#1677ff;text-decoration:none;background-color:transparent;outline:none;cursor:pointer;transition:color 0.3s;-webkit-text-decoration-skip:objects;}:where(.css-fpg3f5) a:hover{color:#69b1ff;}:where(.css-fpg3f5) a:active{color:#0958d9;}:where(.css-fpg3f5) a:active,:where(.css-fpg3f5) a:hover{text-decoration:none;outline:0;}:where(.css-fpg3f5) a:focus{text-decoration:none;outline:0;}:where(.css-fpg3f5) a[disabled]{color:rgba(0, 0, 0, 0.25);cursor:not-allowed;}</style><style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="nxn20z" data-token-hash="24omxn">:where(.css-fpg3f5)[class^="ant-spin"],:where(.css-fpg3f5)[class*=" ant-spin"]{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';font-size:14px;box-sizing:border-box;}:where(.css-fpg3f5)[class^="ant-spin"]::before,:where(.css-fpg3f5)[class*=" ant-spin"]::before,:where(.css-fpg3f5)[class^="ant-spin"]::after,:where(.css-fpg3f5)[class*=" ant-spin"]::after{box-sizing:border-box;}:where(.css-fpg3f5)[class^="ant-spin"] [class^="ant-spin"],:where(.css-fpg3f5)[class*=" ant-spin"] [class^="ant-spin"],:where(.css-fpg3f5)[class^="ant-spin"] [class*=" ant-spin"],:where(.css-fpg3f5)[class*=" ant-spin"] [class*=" ant-spin"]{box-sizing:border-box;}:where(.css-fpg3f5)[class^="ant-spin"] [class^="ant-spin"]::before,:where(.css-fpg3f5)[class*=" ant-spin"] [class^="ant-spin"]::before,:where(.css-fpg3f5)[class^="ant-spin"] [class*=" ant-spin"]::before,:where(.css-fpg3f5)[class*=" ant-spin"] [class*=" ant-spin"]::before,:where(.css-fpg3f5)[class^="ant-spin"] [class^="ant-spin"]::after,:where(.css-fpg3f5)[class*=" ant-spin"] [class^="ant-spin"]::after,:where(.css-fpg3f5)[class^="ant-spin"] [class*=" ant-spin"]::after,:where(.css-fpg3f5)[class*=" ant-spin"] [class*=" ant-spin"]::after{box-sizing:border-box;}:where(.css-fpg3f5).ant-spin{box-sizing:border-box;margin:0;padding:0;color:#1677ff;font-size:0;line-height:1.5714285714285714;list-style:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';position:absolute;display:none;text-align:center;vertical-align:middle;opacity:0;transition:transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);}:where(.css-fpg3f5).ant-spin-spinning{position:static;display:inline-block;opacity:1;}:where(.css-fpg3f5).ant-spin-nested-loading{position:relative;}:where(.css-fpg3f5).ant-spin-nested-loading >div>.ant-spin{position:absolute;top:0;inset-inline-start:0;z-index:4;display:block;width:100%;height:100%;max-height:400px;}:where(.css-fpg3f5).ant-spin-nested-loading >div>.ant-spin .ant-spin-dot{position:absolute;top:50%;inset-inline-start:50%;margin:-10px;}:where(.css-fpg3f5).ant-spin-nested-loading >div>.ant-spin .ant-spin-text{position:absolute;top:50%;width:100%;padding-top:5px;text-shadow:0 1px 2px #ffffff;font-size:14px;}:where(.css-fpg3f5).ant-spin-nested-loading >div>.ant-spin.ant-spin-show-text .ant-spin-dot{margin-top:-20px;}:where(.css-fpg3f5).ant-spin-nested-loading >div>.ant-spin-sm .ant-spin-dot{margin:-7px;}:where(.css-fpg3f5).ant-spin-nested-loading >div>.ant-spin-sm .ant-spin-text{padding-top:2px;}:where(.css-fpg3f5).ant-spin-nested-loading >div>.ant-spin-sm.ant-spin-show-text .ant-spin-dot{margin-top:-17px;}:where(.css-fpg3f5).ant-spin-nested-loading >div>.ant-spin-lg .ant-spin-dot{margin:-16px;}:where(.css-fpg3f5).ant-spin-nested-loading >div>.ant-spin-lg .ant-spin-text{padding-top:11px;}:where(.css-fpg3f5).ant-spin-nested-loading >div>.ant-spin-lg.ant-spin-show-text .ant-spin-dot{margin-top:-26px;}:where(.css-fpg3f5).ant-spin-nested-loading .ant-spin-container{position:relative;transition:opacity 0.3s;}:where(.css-fpg3f5).ant-spin-nested-loading .ant-spin-container::after{position:absolute;top:0;inset-inline-end:0;bottom:0;inset-inline-start:0;z-index:10;width:100%;height:100%;background:#ffffff;opacity:0;transition:all 0.3s;content:"";pointer-events:none;}:where(.css-fpg3f5).ant-spin-nested-loading .ant-spin-blur{clear:both;opacity:0.5;user-select:none;pointer-events:none;}:where(.css-fpg3f5).ant-spin-nested-loading .ant-spin-blur::after{opacity:0.4;pointer-events:auto;}:where(.css-fpg3f5).ant-spin-tip{color:rgba(0, 0, 0, 0.45);}:where(.css-fpg3f5).ant-spin .ant-spin-dot{position:relative;display:inline-block;font-size:20px;width:1em;height:1em;}:where(.css-fpg3f5).ant-spin .ant-spin-dot-item{position:absolute;display:block;width:9px;height:9px;background-color:#1677ff;border-radius:100%;transform:scale(0.75);transform-origin:50% 50%;opacity:0.3;animation-name:css-fpg3f5-antSpinMove;animation-duration:1s;animation-iteration-count:infinite;animation-timing-function:linear;animation-direction:alternate;}:where(.css-fpg3f5).ant-spin .ant-spin-dot-item:nth-child(1){top:0;inset-inline-start:0;}:where(.css-fpg3f5).ant-spin .ant-spin-dot-item:nth-child(2){top:0;inset-inline-end:0;animation-delay:0.4s;}:where(.css-fpg3f5).ant-spin .ant-spin-dot-item:nth-child(3){inset-inline-end:0;bottom:0;animation-delay:0.8s;}:where(.css-fpg3f5).ant-spin .ant-spin-dot-item:nth-child(4){bottom:0;inset-inline-start:0;animation-delay:1.2s;}:where(.css-fpg3f5).ant-spin .ant-spin-dot-spin{transform:rotate(45deg);animation-name:css-fpg3f5-antRotate;animation-duration:1.2s;animation-iteration-count:infinite;animation-timing-function:linear;}:where(.css-fpg3f5).ant-spin-sm .ant-spin-dot{font-size:14px;}:where(.css-fpg3f5).ant-spin-sm .ant-spin-dot i{width:6px;height:6px;}:where(.css-fpg3f5).ant-spin-lg .ant-spin-dot{font-size:32px;}:where(.css-fpg3f5).ant-spin-lg .ant-spin-dot i{width:14px;height:14px;}:where(.css-fpg3f5).ant-spin.ant-spin-show-text .ant-spin-text{display:block;}</style><style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="_effect-css-fpg3f5-antSpinMove">@keyframes css-fpg3f5-antSpinMove{to{opacity:1;}}</style><style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="_effect-css-fpg3f5-antRotate">@keyframes css-fpg3f5-antRotate{to{transform:rotate(405deg);}}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=yes">
+<meta name="keywords" content="PIPO, PIPO Live, group voice chat, voice room, social app">
+<meta name="description" content="PIPO Live is a group voice chat app. Join live voice rooms, meet new friends and share good times.">
+<title>PIPO Live - Group Voice Chat</title>
+<link rel="icon" href="assets/logo.png">
+<script>
+      (function () {
+        var ua = navigator.userAgent || '';
+        var isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(ua));
+        if (isIOS) document.documentElement.className += ' is-ios';
+      })();
+</script>
+<style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .header {
+    height: 2.9166vw;
+    background-color: #fff;
+    display: flex
+;
+    align-items: center;
+    padding: 0 18.75vw;
+}
+      .container {
+        position: relative;
+        overflow-y: auto;
+      }
+
+      .image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      .copyright {
+        text-align: center;
+        background-color: #fff;
+        color: #111;
+        padding: 20px;
+        font-size: 13px;
+        position: sticky;
+      }
+      .btn-box {
+        width: 40vw;
+        display: flex;
+        gap: 24px;
+      }
+      .btn-android {
+        position: absolute;
+        top: 35.16vw;
+        left: 30.61vw;
+        width: 12.86vw;
+        height: 4.06vw;
+        background-image: url('./assets/Android.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      .btn-ios {
+        position: absolute;
+        top: 35.16vw;
+        left: 15.61vw;
+        width: 12.86vw;
+        height: 4.06vw;
+        background-image: url('./assets/iOS.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      /* 2026-11-22 去掉 Google Play（先注释保留）
+      .btn-google-play {
+        position: absolute;
+        top: 35.16vw;
+        left: 30.61vw;
+        width: 12.86vw;
+        height: 4.06vw;
+        background-image: url('./assets/Google-play.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      } */
+      
+      .btn-android a,
+      .btn-ios a,
+      /* .btn-google-play a, */
+      .btn-huawei-play a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+      @media screen and (max-width: 750px) {
+        .btn-android {
+          /* top: 175vw; */
+          left: 34.5vw;
+          width: 30.872vw;
+          height: 9.832vw;
+        }
+        .btn-ios {
+          top: 175vw;
+          left: 30.7vw;
+          width: 38.59vw;
+          height: 12.29vw;
+        }
+        /* .btn-google-play {
+          top: 175vw;
+          left: 1.5vw;
+          width: 30.872vw;
+          height: 9.832vw;
+
+        } */
+        .btn-huawei-play {
+          top: 175vw;
+          left: 67.5vw;
+          width: 30.872vw;
+          height: 9.832vw;
+        }
+      }
+      .logo {
+          width: 2.7083vw;
+          height: 2.7083vw;
+      }
+      .header-info {
+          margin-left: 0.52083vw;
+      }
+      .title {
+          font-weight: bold;
+          font-size: 1.04166vw;
+          color: #323131;
+      }
+
+      .sub-title {
+          font-size: 0.83333vw;
+          color: #ADADAD;
+      }
+      .contact {
+          margin-left: auto;
+      }
+
+      /* 手机版：三屏整图（375 × 812 设计稿）。定位一律用百分比，不用 vw —— vw 含滚动条宽度，会比图片宽度大 */
+      .m-only { display: none; }
+      .m-sec {
+        position: relative;
+        aspect-ratio: 375 / 812;
+      }
+      .m-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .m-hit {
+        position: absolute;
+        display: block;
+      }
+      .m-hit-ios { display: none; }
+      .m-hit1 {
+        left: 32.5333%;
+        top: 34.6059%;
+        width: 34.872%;
+        height: 6.0209%;
+      }
+      /* 两版按钮位置/尺寸不同，热区按平台各一套 */
+      .m-hit1-ios {
+        left: 28.8%;
+        top: 33.8669%;
+        width: 42.264%;
+        height: 6.8473%;
+      }
+      .m-hit3 {
+        left: 32.5333%;
+        top: 76.8473%;
+        width: 34.872%;
+        height: 6.0209%;
+      }
+      .m-hit3-ios {
+        left: 28.8%;
+        top: 76.8473%;
+        width: 42.264%;
+        height: 6.8473%;
+      }
+      html.is-ios .m-hit-android { display: none; }
+      html.is-ios .m-hit-ios { display: block; }
+      /* 750 管竖屏；横屏手机宽度 667~926，用 landscape + 矮屏兜住 */
+      @media screen and (max-width: 750px), screen and (orientation: landscape) and (max-height: 500px) {
+        .pc-only { display: none; }
+        .m-only {
+          display: block;
+          background-color: #031a0d;
+        }
+      }
+      /* 站点六要素入口 */
+      .site-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 28px;
+        padding: 26px 20px 4px;
+        background-color: #fff;
+        font-size: 14px;
+      }
+      .site-links a {
+        color: #666;
+        text-decoration: none;
+      }
+      .site-links a:hover {
+        color: #111;
+        text-decoration: underline;
+      }
+      .m-site-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin: 0;
+        padding: 26px 16px 34px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .m-site-links a {
+        color: rgba(255, 255, 255, 0.85);
+        text-decoration: none;
+      }
+      .m-site-links a:active {
+        color: #fff;
+      }
+      .m-copyright {
+        padding: 0 24px 34px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.55);
+      }
+      .m-copyright a {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+      }
+    </style>
+</head>
 <body>
-<h2>ceshi</h2>
+    <div class="pc-only">
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="assets/logo.png">
+            <div class="header-info">
+                <div class="title">
+                    PIPO Live
+                </div>
+                <div class="sub-title">
+                    Group voice chat
+                </div>
+            </div>
+            <a class="contact" href="mailto:guiguzi671@gmail.com">
+                Contact Us
+            </a>
+        </div>
+        <img src="assets/home.png" alt="" class="image">
+        <div class="btn-box">
+          <div class="btn-android">
+            <a href="https://static.kerchat.com/pipo/upload/apk/PIPO.apk"></a>
+          </div>
+          <div class="btn-ios">
+            <a href="https://apps.apple.com/us/app/id6708232117"></a>
+          </div>
+          <!-- 2026-11-22 去掉 Google Play（先注释保留）  <div class="btn-google-play">
+            <a href="https://play.google.com/store/apps/details?id=cn.zayn.game&hl=en" target="__blank"></a>
+          </div> -->
+        </div>
+    </div>
+    <nav class="site-links">
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="return-refund.html">Return &amp; Refund Policy</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </nav>
+    <div class="copyright">
+    <p>
+    Contact Us: <a href="mailto:guiguzi671@gmail.com">guiguzi671@gmail.com</a>
+    </p>
+    <p>Copyright © 2026 PIPO</p>
+    <p class="entity-line">PIPO is operated by BOUNDLESS MOONLIGHT INTERNATIONAL LIMITED (Business Registration No. 79669512), Hong Kong.</p>
+    </div>
+    </div>
+    <div class="m-only">
+      <section class="m-sec">
+        <img class="m-img" src="assets/m/01.jpg" data-ios="assets/m/01-ios.jpg" alt="PIPO Live">
+        <a class="m-hit m-hit-android m-hit1" href="https://static.kerchat.com/pipo/upload/apk/PIPO.apk"></a>
+        <a class="m-hit m-hit-ios m-hit1-ios" href="https://apps.apple.com/us/app/id6708232117"></a>
+      </section>
+      <section class="m-sec">
+        <img class="m-img" src="assets/m/02.jpg" loading="lazy" alt="">
+      </section>
+      <section class="m-sec">
+        <img class="m-img" src="assets/m/03.jpg" data-ios="assets/m/03-ios.jpg" loading="lazy" alt="">
+        <a class="m-hit m-hit-android m-hit3" href="https://static.kerchat.com/pipo/upload/apk/PIPO.apk"></a>
+        <a class="m-hit m-hit-ios m-hit3-ios" href="https://apps.apple.com/us/app/id6708232117"></a>
+      </section>
+      <nav class="m-site-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="return-refund.html">Return &amp; Refund Policy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </nav>
+      <div class="m-copyright">
+        <p><a href="mailto:guiguzi671@gmail.com">guiguzi671@gmail.com</a></p>
+        <p>Copyright © 2026 PIPO</p>
+        <p>PIPO is operated by BOUNDLESS MOONLIGHT INTERNATIONAL LIMITED (Business Registration No. 79669512), Hong Kong.</p>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var ua = navigator.userAgent || '';
+        var isIOS = document.documentElement.className.indexOf('is-ios') > -1;
+        var isAndroid = /Android/i.test(ua);
+        function setDisplay(sel, value) {
+          var nodes = document.querySelectorAll(sel);
+          for (var k = 0; k < nodes.length; k++) nodes[k].style.display = value;
+        }
+        if (isIOS) {
+          setDisplay('.btn-android', 'none');
+          // setDisplay('.btn-google-play', 'none');
+          setDisplay('.btn-ios', 'block');
+          var shots = document.querySelectorAll('.m-img[data-ios]');
+          for (var s = 0; s < shots.length; s++) {
+            shots[s].src = shots[s].getAttribute('data-ios');
+          }
+        }
+        if (isAndroid) {
+          setDisplay('.btn-android', 'block');
+          setDisplay('.btn-ios', 'none');
+        }
+      })();
+    </script>
+  
 </body>
+
+
 </html>

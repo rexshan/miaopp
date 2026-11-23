@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta property="og:url" content="https://www.kerchat.com/about.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="About Us - PIPO">
+  <meta property="og:description" content="About PIPO Live, a group voice chat app.">
+  <meta property="og:image" content="assets/logo.png">
+  <link rel="icon" href="assets/logo.png">
+  <title>About Us - PIPO</title>
+  <!-- TODO(bb): 公司主体名称 / 注册地 / 成立时间 / 团队规模 等实体信息待补，未确认前不要写死 -->
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          clientWidth = clientWidth > 750 ? 750 : clientWidth;
+          clientWidth = clientWidth < 320 ? 320 : clientWidth;
+          docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+      recalc();
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+  </script>
+  <style>
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      padding: 20px;
+      padding-block-start: 112px;
+      padding-block-start: calc(20px + 56px + max(env(safe-area-inset-top, 0px), 36px));
+      padding-block-end: calc(20px + env(safe-area-inset-bottom, 0px));
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    p {
+      margin-block-end: 16px;
+    }
+
+    h2 {
+      margin-block: 26px 12px;
+      font-size: 17px;
+    }
+
+    ul {
+      margin-block-end: 16px;
+      padding-inline-start: 22px;
+    }
+
+    li {
+      margin-block-end: 8px;
+    }
+
+    a {
+      color: #1a55c4;
+    }
+
+    .bold {
+      font-weight: bolder;
+    }
+
+    .center {
+      text-align: center;
+      display: block;
+    }
+
+    .page-topbar {
+      position: fixed;
+      inset-block-start: 0;
+      inset-inline: 0;
+      z-index: 10;
+      box-sizing: border-box;
+      height: 92px;
+      height: calc(56px + max(env(safe-area-inset-top, 0px), 36px));
+      padding-block-start: 36px;
+      padding-block-start: max(env(safe-area-inset-top, 0px), 36px);
+      background: #fff;
+      border-block-end: 1px solid #ebebeb;
+    }
+
+    .page-topbar-inner {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+    }
+
+    .page-topbar-title {
+      box-sizing: border-box;
+      max-width: 100%;
+      margin: 0;
+      padding-inline: 56px;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .page-topbar-back {
+      position: absolute;
+      inset-block: 0;
+      inset-inline-start: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .page-topbar-back svg {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+
+    .site-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 18px;
+      margin-block-start: 36px;
+      padding-block: 20px 8px;
+      border-block-start: 1px solid #e8e8e8;
+      font-size: 14px;
+    }
+
+    .site-links a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .site-links a:hover {
+      color: #1a1a1a;
+      text-decoration: underline;
+    }
+@media (max-width: 420px) {
+  .site-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+    .entity-block {
+      margin: 0 0 20px;
+      padding: 14px 16px;
+      border-left: 3px solid #1a1a1a;
+      background: #f6f6f6;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+    .entity-block a {
+      color: #1a1a1a;
+    }
+    .entity-label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .todo {
+      background: #fff3bf;
+      border: 1px dashed #d9a400;
+      padding: 0 4px;
+      color: #7a5c00;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="page-topbar">
+    <div class="page-topbar-inner">
+      <button class="page-topbar-back" type="button" aria-label="Back" onclick="pageBack()">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 5 8 12l7 7" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <h1 class="page-topbar-title">About Us</h1>
+    </div>
+  </div>
+
+  <p class="bold center">About PIPO Live</p>
+
+  <p>PIPO Live is a group voice chat app. It gives people an easy way to drop into a live voice room, talk with
+    others in real time and stay connected with the people they meet.</p>
+
+  <h2>What you can do on PIPO</h2>
+  <ul>
+    <li>Join live group voice rooms and talk with several people at the same time.</li>
+    <li>Meet new people and keep in touch with the ones you already know.</li>
+    <li>Support the hosts you like with virtual gifts inside the rooms.</li>
+  </ul>
+
+  <h2>Where to get PIPO</h2>
+  <p>PIPO is available on iOS through the App Store, and on Android through the official APK provided on our home
+    page. Always download the app from the official channels listed on this website.</p>
+
+  <h2>Company information</h2>
+  <p>PIPO Live is operated by BOUNDLESS MOONLIGHT INTERNATIONAL LIMITED, a private company limited by shares incorporated in Hong Kong, Business
+    Registration No. 79669512. Registered address: <span class="todo">【待补：香港注册地址】</span>.</p>
+  <p>For anything about the app, write to <a href="mailto:guiguzi671@gmail.com">guiguzi671@gmail.com</a>. The same address is listed on our
+    <a href="contact.html">Contact Us</a> page.</p>
+
+  <h2>Community and safety</h2>
+  <p>We want PIPO to stay a friendly place. Content that breaks our rules can be reported from inside the app, and
+    you can also reach us at any time through the contact details on our
+    <a href="contact.html">Contact Us</a> page. How we handle your information is described in our
+    <a href="privacy-policy.html">Privacy Policy</a>, and the rules for using the app are set out in our
+    <a href="terms-of-service.html">Terms of Service</a>.</p>
+
+  <script>
+    function pageBack() {
+      var closed = false;
+      try {
+        if (window.android && typeof window.android.H5Close === 'function') {
+          window.android.H5Close();
+          closed = true;
+        }
+      } catch (e) {}
+      try {
+        if (window.android && typeof window.android.XGGameClose === 'function') {
+          window.android.XGGameClose();
+          closed = true;
+        }
+      } catch (e) {}
+      try {
+        var handlers = window.webkit && window.webkit.messageHandlers;
+        if (handlers && handlers.XGGameClose) {
+          handlers.XGGameClose.postMessage('');
+          closed = true;
+        }
+        if (handlers && handlers.H5Close) {
+          handlers.H5Close.postMessage('');
+          closed = true;
+        }
+      } catch (e) {}
+      if (!closed) {
+        if (document.referrer && document.referrer.indexOf(location.host) > -1) {
+          window.history.back();
+        } else {
+          location.href = 'index.html';
+        }
+      }
+    }
+  </script>
+  <nav class="site-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="return-refund.html">Return &amp; Refund Policy</a>
+  </nav>
+</body>
+
+</html>
